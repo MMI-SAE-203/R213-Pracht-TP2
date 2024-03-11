@@ -1,7 +1,18 @@
 <script setup lang="ts">
-//
+import { RouterLink, RouterView } from 'vue-router/auto'
 </script>
 
 <template>
-  <h1 class="text-2xl">Bonjour monde !</h1>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <Suspense>
+    <routerView />
+  </Suspense>
 </template>
