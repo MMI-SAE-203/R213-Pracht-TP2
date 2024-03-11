@@ -31,3 +31,7 @@ coverage
 
 # généré par "unplugin-vue-router"
 typed-router.d.ts
+
+# PocketBase
+/pocketbase/*
+!/pocketbase/pb_migrations
