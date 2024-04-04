@@ -223,6 +223,8 @@ Ajouter le menu dans `/src/App.vue` :
 
 # Travail TP4
 
+Faire le fichier `/src/pages/offres/[id].vue`
+
 ## Changer `/offres` en une liste de liens
 
 ```html
@@ -230,7 +232,7 @@ Ajouter le menu dans `/src/App.vue` :
   <li v-for="uneMaison of maisonsListe" :v-key="uneMaison.id">
     <RouterLink
       :to="{
-        name: 'offres-id',
+        name: '/offres/[id]',
         params: {
           id: uneMaison.id
         }
@@ -246,19 +248,21 @@ Ajouter le menu dans `/src/App.vue` :
 On remarquera l'usage d'un binding (`:`) pour la props `to` pour pouvoir passer un objet :
 
 - `name` : le nom de la route (ne change pas avec les paramètres)
-- `params` : un objet contenant les paramètres (`props`) passés au composant affiché par la route (de `/src/pages/...` dans `<RouterView>`)
+- `params` : un objet contenant les paramètres de route passés au composant affiché par la route (de `/src/pages/...` dans `<RouterView>`)
 
 ## afficher une offre :
 
-`/src/pages/offres/[id].vue`
+fichier `/src/pages/offres/[id].vue`
 
 ```html
 <script setup lang="ts">
   import MaisonCard from '@/components/MaisonCard.vue'
 
-  const props = defineProps<{
-    id: string
-  }>()
+  import { useRoute } from 'vue-router/auto'
+
+  const route = useRoute('/offres/[id]')
+  console.log('id :', route.params.id)
+
   const uneMaison = await /* Avez-vous une fonction pour cela ? */
 </script>
 <template>
