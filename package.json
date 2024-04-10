@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "pocketbase": "^0.21.1",
-    "pocketbase-typegen": "^1.2.1",
-    "unplugin-vue-router": "^0.8.5",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "pocketbase-typegen": "^1.2.1",
+    "unplugin-vue-router": "^0.8.5",
     "@rushstack/eslint-patch": "^1.3.3",
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.28",
