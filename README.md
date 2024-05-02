@@ -65,7 +65,7 @@ const maisonsListe = /* coller ici le tableau d'objet */
 ### Code du composant
 
 Faire le fichier [`/src/components/MaisonCard.vue`](/src/components/MaisonCard.vue)\
-Prendre modèle sur le CM/TD [`PersonneCard.vue`](https://github.com/ppierre/vue-base-tailwind/tree/vue3.3-test-personne#composant-avec-param%C3%A9tre)
+Prendre modèle sur le CM/TD [`PersonneCard.vue`](https://github.com/ppierre/vue-base-tailwind/tree/vue3.3-test-personne?tab=readme-ov-file#composant-avec-param%C3%A8tre)
 
 Pour le code du template, vous pouvez utiliser un des plugins Figma suivants :
 
@@ -94,7 +94,7 @@ Dans le `<template>` de `App.vue`, ajouter :
 
 Afficher toutes les maisons avec un `v-for`comme [vu en CM/TD][CM-boucle-objet]
 
-[CM-boucle-objet]: https://github.com/ppierre/vue-base-tailwind/tree/vue3.3-test-personne#usage-dans-une-boucle
+[CM-boucle-objet]: https://github.com/ppierre/vue-base-tailwind/tree/vue3.3-test-personne?tab=readme-ov-file#usage-dans-une-boucle
 
 ## PocketBase (données dynamiques)
 
