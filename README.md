@@ -82,7 +82,7 @@ const props: MaisonResponse = defineProps<MaisonResponse>()
 
 ### Tester le composant
 
-Dans le `<template>` de `App.vue`, ajouter :
+Dans le `<template>` de `/src/pages/index.vue`, ajouter :
 
 ```html
 <MaisonCard v-bind="maisonsListe[0]" />
