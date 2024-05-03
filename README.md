@@ -75,9 +75,9 @@ Pour le code du template, vous pouvez utiliser un des plugins Figma suivants :
 Pour les `props` du composant `MaisonCard`, bien utiliser le type fait manuellement : `MaisonRecord` à importer de `/src/types.ts`.
 
 ```ts
-import type { MaisonResponse } from '@/types'
+import type { MaisonRecord } from '@/types'
 
-const props: MaisonResponse = defineProps<MaisonResponse>()
+const props = defineProps<MaisonRecord>()
 ```
 
 ### Tester le composant
