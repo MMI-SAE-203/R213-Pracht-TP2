@@ -82,13 +82,17 @@ const props = defineProps<MaisonRecord>()
 
 ### Tester le composant
 
-Dans le `<template>` de `/src/pages/index.vue`, ajouter :
+Dans le `<script setup>` de `/src/pages/index.vue`, ajouter au début l'import du composant :
+
+```ts
+import MaisonCard from '@/components/MaisonCard.vue'
+```
+
+Dans le `<template>` de `/src/pages/index.vue`, ajouter l'appel du composant :
 
 ```html
 <MaisonCard v-bind="maisonsListe[0]" />
 ```
-
-(Vérifiez que l'import du composant a été automatiquement ajouté.)
 
 ## Afficher les données
 
