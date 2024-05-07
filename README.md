@@ -129,7 +129,7 @@ npm run typegen
 Dans `pages/index.vue` :
 
 - Remplacer l'import du type `MaisonResponse` depuis `@/types` par `@/pocketbase-types`.
-- Vérifiez que l'éditeur ne signale pas d'erreurs.
+- Vérifiez que l'éditeur ne signale pas d'erreurs (sauf sur `collectionName`).
   ```ts
   const maisonsListe:MaisonResponse[] = /* ... */
   ```
